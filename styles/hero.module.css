@@ -1,0 +1,78 @@
+.hero {
+  padding-top: 60px !important;
+}
+.hero__content h5 {
+  color: #808dad;
+  font-weight: 400;
+}
+
+.hero__content {
+  padding-top: 50px;
+}
+
+.hero__img {
+  position: relative;
+  z-index: 9;
+}
+
+.hero__img img {
+  border-radius: 50px 5px 5px 5px;
+}
+
+.hero__skills {
+  text-align: left;
+  width: 130px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  background: #808dad26;
+  z-index: 10;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .hero__content h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .hero__content h5 {
+    font-size: 1.1rem !important;
+  }
+
+  .hero__img img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .hero__content {
+    padding-top: 0;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__img {
+    text-align: center !important;
+    margin-top: 50px;
+  }
+
+  .hero__skills {
+    left: 15%;
+  }
+
+  .hero__experience {
+    right: 20%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero__skills {
+    display: none;
+  }
+  .hero__experience {
+    display: none !important;
+  }
+}
