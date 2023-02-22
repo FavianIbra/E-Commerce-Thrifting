@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/portfolio.module.css";
-// import PortfolioItem from "./PortfolioItem";
+import PortfolioItem from "./PortfolioItem";
 
 import portfolioData from "../data/portfolio";
 
@@ -52,6 +52,12 @@ const Portfolio = () => {
               
             </div>
           </Col>
+
+          {data?.map((item) => (
+            <Col lg="4" md="4" sm="6" key={item.id}>
+              <PortfolioItem item={item} />
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>
