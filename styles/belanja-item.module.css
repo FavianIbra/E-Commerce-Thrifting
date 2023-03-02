@@ -4,7 +4,30 @@
     padding-top: 30px;
     border-radius: 10px;
     margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    transform: translate(0, 0);
+    transition:.3s;
   }
+
+  .belanja__item:hover{
+    transform: translate(0,-9px);
+  }
+
+  .primary_btn {
+    padding: 0 10px 5px 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: translate(0, 110px);
+    line-height: 25px;
+    transition: 0.4s ease;
+    display: inline-block;
+}
+  
+  .belanja__item:hover .primary_btn {
+    transform: translate(0,10px);
+}
   
   .belanja__item h6 {
     color: #B4AEE8;

@@ -19,7 +19,14 @@ const BelanjaItem = (props) => {
       <div className={`${classes.belanja__img}`}>
         <Image alt="portfolio-img" src={img} width="380" height="300" />
       </div>
+
+      <div className={`${classes.primary_btn} bg-transparent`}>
+        <button className="primary__btn">
+          <Link href={liveUrl}>Beli</Link>
+        </button>
+      </div>
     </div>
+    
   );
 };
 
