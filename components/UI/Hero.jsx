@@ -3,16 +3,26 @@ import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
 import Link from "next/link";
-import heroImg from "../../public/images/hero.jpg";
+import Slider from "react-slick";
 import classes from "../../styles/hero.module.css";
 
 const Hero = () => {
+  const settings = {
+    dots: false,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    infinite: true,
+    swipeToSlide: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <section className={`${classes.hero}`}>
+     <section className={`${classes.hero}`}>
       <Container>
         <Row>
           {/* ========== hero content ============= */}
-          <Col lg="6" md="6">
+          <Col lg="8" md="8">
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hello" />
               <h2 className="mt-3 mb-3">I&apos;m Favian Ibra Yanuarta</h2>
@@ -31,10 +41,44 @@ const Hero = () => {
           </Col>
 
           {/* ========== hero img ============= */}
-          <Col lg="6" md="6">
-            <div className={`${classes.hero__img} text-end`}>
-              <Image alt="hero-image" src={heroImg} width="400" height="400" />
-            </div>
+
+        
+          <Col lg="4" md="4">
+            <Slider {...settings}>
+              <div className={`${classes.testimonial__item}`}>
+                <div className={`${classes.testimonial__client}`}>
+                  <Image
+                    alt="client-img"
+                    src="/images/sweater.jpg"
+                    width="2752"
+                    height="2752"
+                    className=" rounded-2"
+                  />
+                </div>
+              </div>
+                  <div className={`${classes.testimonial__item}`}>
+                  <div className={`${classes.testimonial__client}`}>
+                    <Image
+                      alt="client-img"
+                      src="/images/sweater2.jpg"
+                      width="2752"
+                      height="2752"
+                      className=" rounded-2"
+                    />
+                    </div>
+                  </div>
+                  <div className={`${classes.testimonial__item}`}>
+                    <div className={`${classes.testimonial__client}`}>
+                      <Image
+                      alt="client-img"
+                      src="/images/sweater3.jpg"
+                      width="2752"
+                      height="2752"
+                      className=" rounded-2"
+                      />
+                      </div>
+                </div>
+            </Slider>
           </Col>
         </Row>
       </Container>

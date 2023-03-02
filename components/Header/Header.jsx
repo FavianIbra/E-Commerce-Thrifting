@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-
 import { Container } from "reactstrap";
 import classes from "./header.module.css";
 import Link from "next/link";
@@ -51,7 +50,7 @@ const Header = () => {
           {/* ======== navigation logo ======== */}
           <div className={`${classes.logo}`}>
             <h1>
-              <span>Favian</span>
+               <span>Thred</span>Up
             </h1>
           </div>
 
