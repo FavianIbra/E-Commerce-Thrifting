@@ -17,6 +17,12 @@
   .nav__menu a:hover {
     color: #FFE3FE;
   }
+
+  .footer__created h6 {
+    text-align: right;
+    font-weight: 400;
+    color: rgba(180,174,232);
+  }
   
   .footer__copyright {
     border-top: 1px solid #808dad49;

@@ -25,30 +25,30 @@ const Contact = () => {
                 <span>
                   <i className="ri-map-pin-line"></i>
                 </span>
-                <p>Favian Ibra Yanuarta - Malang</p>
+                <p>Jakarta Pusat</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
                   <i className="ri-mail-line"></i>
                 </span>
-                <p>ibra.yanuarta@gmail.com</p>
+                <p>thriftshopper@thredup.com</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
                   <i className="ri-phone-line"></i>
                 </span>
-                <p>+085736902974</p>
+                <p>+(62)85736902974</p>
               </li>
             </ul>
 
             <div className={`${classes.social__links}`}>
-              <Link href="https://github.com/FavianIbra">
-                <i className="ri-github-line"></i>
+              <Link href="#">
+                <i className="ri-youtube-line"></i>
               </Link>
-              <Link href="https://www.linkedin.com/in/favian-ibra-572bb7266/">
-                <i className="ri-linkedin-line"></i>
+              <Link href="#">
+                <i className="ri-facebook-line"></i>
               </Link>
-              <Link href="https://www.instagram.com/fvnibra/?hl=id">
+              <Link href="#">
                 <i className="ri-instagram-line"></i>
               </Link>
             </div>

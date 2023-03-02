@@ -10,8 +10,8 @@ const NAV__LINK = [
     display: "Home",
   },
   {
-    path: "#portfolio",
-    display: "Portfolio",
+    path: "#belanja",
+    display: "Shopping",
   },
   {
     path: "#contact",
@@ -38,12 +38,17 @@ const Footer = () => {
             </div>
           </Col>
 
+          <Col lg="6" className={`${classes.footer__top}`}>
+            <div className={`${classes.footer__created}`}>
+              <h6>Created by TI Studio</h6>
+            </div>
+          </Col>
+
           {/* ========= footer bottom ========= */}
           <Col lg="12">
             <div className={`${classes.footer__copyright}`}>
               <p>
-                &copy; Copyright {year} - Developed by Favian Ibra Yanuarta. All right
-                reserved.{" "}
+                &copy; {year} ThredUp, Inc. All Rights Reserved .{" "}
               </p>
             </div>
           </Col>
