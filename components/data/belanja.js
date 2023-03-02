@@ -1,28 +1,35 @@
 const belanja = [
     {
       id: "01",
-      title: "Form Login with Futuristik Style",
-      img: "/images/portfolio-01.jpg",
-      category: "Mobile App",
-      keyword: ["Mobile", "App", "UI-UX"],
-      liveUrl: "#",
-    },
-  
-    {
-      id: "02",
-      title: "Donation App",
-      img: "/images/portfolio-02.jpg",
-      category: "Mobile App",
-      keyword: ["Mobile", "App", "UI-UX"],
+      title: "W.ESSENTIÈLS x One Piece",
+      img: "/images/sweater8.jpg",
+      category: "Hoodie",
+      keyword: ["Thrift", "399", "Star"],
       liveUrl: "#",
     },
   
     {
       id: "03",
-      title: "Care Protect App",
-      img: "/images/portfolio-03.jpg",
-      category: "Mobile App",
-      keyword: ["Mobile", "App", "UI-UX"],
+      title: "House of Smith Hoodie",
+      img: "/images/sweater7.jpg",
+      category: "Hoodie",
+      keyword: ["Thrift", "200", "Mall"],
+      liveUrl: "#",
+    },
+    {
+      id: "04",
+      title: "Hammerstout - Gracee",
+      img: "/images/sweater9.jpg",
+      category: "Hoodie",
+      keyword: ["Thrift", "Limited", "Sold"],
+      liveUrl: "#",
+    },
+    {
+      id: "05",
+      title: "TENDENCIES Youth Belge",
+      img: "/images/sweater10.jpg",
+      category: "Hoodie",
+      keyword: ["Thrift", "350", "Mall"],
       liveUrl: "#",
     },
   ];
