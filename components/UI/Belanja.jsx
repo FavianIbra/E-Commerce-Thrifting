@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
-import classes from "../../styles/portfolio.module.css";
-import PortfolioItem from "./PortfolioItem";
+import classes from "../../styles/belanja.module.css";
+import BelanjaItem from "./BelanjaItem";
+import belanjaData from "../data/belanja";
 
-import portfolioData from "../data/portfolio";
-
-const Portfolio = () => {
+const Belanja = () => {
   const [filter, setFilter] = useState("Mobile App");
   const [data, setData] = useState();
 
   useEffect(() => {
     if (filter === "Mobile App") {
-      const filteredData = portfolioData.filter(
+      const filteredData = belanjaData.filter(
         (item) => item.category === filter
       );
 
@@ -20,7 +19,7 @@ const Portfolio = () => {
     }
 
     if (filter === "Web Design") {
-      const filteredData = portfolioData.filter(
+      const filteredData = belanjaData.filter(
         (item) => item.category === filter
       );
 
@@ -31,7 +30,7 @@ const Portfolio = () => {
   const active = `${classes.tab__btn__active}`;
 
   return (
-    <section id="portfolio">
+    <section id="belanja">
       <Container>
         <Row>
           <Col lg="6" md="6" className="mb-5">
@@ -55,7 +54,7 @@ const Portfolio = () => {
 
           {data?.map((item) => (
             <Col lg="4" md="4" sm="6" key={item.id}>
-              <PortfolioItem item={item} />
+              <BelanjaItem item={item} />
             </Col>
           ))}
         </Row>
@@ -64,4 +63,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Belanja;

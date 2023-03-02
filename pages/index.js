@@ -1,13 +1,13 @@
 import { Fragment } from "react";
 import Hero from "../components/UI/Hero";
-import Portfolio from "../components/UI/Portfolio";
 import Contact from "../components/UI/Contact";
+import Belanja from "../components/UI/Belanja";
 
 export default function Home() {
   return (
     <Fragment>
       <Hero />
-      <Portfolio />
+      <Belanja />
       <Contact />
     </Fragment>
   );
