@@ -10,7 +10,7 @@ const NAV__LINK = [
   },
   {
     path: "#belanja",
-    display: "Belanja",
+    display: "Shopping",
   },
   {
     path: "#contact",

@@ -11,12 +11,13 @@ const Contact = () => {
       <Container>
         <Row>
           <Col lg="6" md="6">
-            <SectionSubtitle subtitle="Contact me" />
-            <h3 className="mt-4 mb-4">Contact with me</h3>
+            <SectionSubtitle subtitle="Service" />
+            <h3 className="mt-4 mb-4">Contact Service</h3>
             <p>
-              Saya adalah Programmer Junior yang sedang mendalami dunia it 
-              khususnya dalam dunia coding. Saat ini saya sedang belajar VueJs 
-              Laravel dan NodeJs React. Dan Project yang saya buat ini menggunakan NextJS.
+            Welcome to our contact service page. We are here to assist you with any questions, 
+            issues, or suggestions you have about our services and products. To contact us, you can 
+            fill out the contact form below with complete and clear information, and our team will 
+            respond to your request within 24 hours.
             </p>
 
             <ul className={`${classes.contact__info__list}`}>
