@@ -77,7 +77,7 @@ function Detail() {
                 disabled
                 className="mt-8 border rounded py-2 px-6 bg-blue-800 hover:bg-blue-1000 border-blue-500 hover:border-blue-600 focus:ring-4 focus:ring-opacity-50 focus:ring-blue-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex felx-row"
               >
-                Masukkan keranjang (IDR {total})
+              Masukkan keranjang (IDR {total})
               </button>
             </div>
           </div>
