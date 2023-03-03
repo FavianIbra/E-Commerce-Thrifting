@@ -1,5 +1,5 @@
 import belanja from "../../components/data/belanja";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { Minus } from "../../components/UI/Minus";
 import { Plus } from "../../components/UI/Plus";
@@ -23,7 +23,7 @@ function Detail() {
     return <div>Item not found</div>;
   }
 
-  const [qty, setQty] = useState(1);
+  const [qty, setQty] =useState(1);
 
   const total = qty * belanja.price
   return (
