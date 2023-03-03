@@ -66,7 +66,7 @@ function Detail() {
                 <p className="font-semibold text-xl ">{qty}</p>
                 <button
                   onClick={() => setQty(prev => prev + 1)}
-                  disabled={qty >= (belanja.stock)}
+                  disabled={qty >= (belanja.stok)}
                   className="text-white disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-current hover:bg-green-100 hover:text-green-500 rounded-md p-1 border-0"
                 >
                   <Plus />
