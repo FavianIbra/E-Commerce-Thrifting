@@ -2,7 +2,7 @@ import React from "react";
 import classes from "../../styles/belanja-item.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import belanja from "../data/belanja";
+
 
 const BelanjaItem = (props) => {
   const { id, title, img, liveUrl, keyword, description } = props.item;

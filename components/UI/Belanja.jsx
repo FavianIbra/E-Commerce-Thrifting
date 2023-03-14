@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
-import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/belanja.module.css";
 import BelanjaItem from "./BelanjaItem";
-import belanjaData from "../data/belanja";
+import belanjaData from "../data/belanja.json";
 
 const Belanja = () => {
   const [filter, setFilter] = useState("Hoodie");
   const [data, setData] = useState();
 
-  useEffect(() => {
+  useEffect(() => { 
     if (filter === "Hoodie") {
       const filteredData = belanjaData.filter(
         (item) => item.category === filter
